@@ -1,0 +1,28 @@
+<body>
+    <div class="main">
+        <h1>Login</h1>
+        <h3>Enter your login credentials</h3>
+        <br>
+
+        <form [formGroup]="loginForm" (ngSubmit)="checkLogin()">
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form3Example3">Email address</label>
+            <input type="text" formControlName="username"id="form3Example3" class="form-control form-control-lg"
+              placeholder="Enter a valid email address" />
+            
+          </div>
+          <div data-mdb-input-init class="form-outline mb-3">
+            <label class="form-label" for="form3Example4">Password</label>
+            <input type="password" formControlName="password" id="form3Example4" class="form-control form-control-lg"
+              placeholder="Enter password" />
+            
+          </div>
+
+            <div class="wrap">
+                <button  type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+
